@@ -34,22 +34,7 @@
 ######################## script happens below #################################
 #
 # Load config values
-#source ./.config
-
-AWS_ACCESS_KEY_ID=AKIA4WNIEOOK6TUJVC5Q
-AWS_SECRET_ACCESS_KEY=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
-today="$(date +%F)"                       # Today's date YYYY-MM-DD
-now="$(date -R)"       # Today's date in RFC Email format
-USER="$(whoami)"                          # Set the $USER var to logged in user
-work_dir="/var/www/html"                  # Path to Wordpress installation (e.g. /var/www/html)
-backup_dir="$HOME/backups"                # Path to dir to save backup files
-s3_bucket="s3://allcomone.com.s3"         # AWS S3 bucket and prefix
-local_days_to_keep=3				      # 0 to keep forever
-# deleted logs_dir="${backup_path}/logs"  # Path to save log files
-log_file="www-backup-${today}.log"        # Log file name
-db_user="root"                            # Database user name
-db_name=""                                # Database name
-
+source ./.config
 
 
 
